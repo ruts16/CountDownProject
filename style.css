@@ -1,0 +1,63 @@
+/* Global styles applied to all elements */
+* {
+    padding: 0; /* Remove default padding from all elements */
+    margin: 0; /* Remove default margin from all elements */
+    font-family: "Poppins", serif; /* Set the global font to Poppins */
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's dimensions */
+}
+
+/* Import Google Fonts for use in the page */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Freeman&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Styling for the main container */
+.main {
+    width: 100%; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    background: url('image1.webp') no-repeat center center; /* Add a background image, center it horizontally and vertically */
+    background-size: cover; /* Scale the image to cover the entire screen */
+}
+
+/* Overlay to add a translucent layer over the background */
+.overlay {
+    width: 100%; /* Full width of the parent container */
+    height: 100%; /* Full height of the parent container */
+    display: flex; /* Enable Flexbox for child alignment */
+    flex-direction: column; /* Arrange child elements vertically */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+}
+
+/* Styling for the title text */
+.title {
+    margin-top: 20px; /* Add space above the title */
+    color: white; /* White text color */
+    font-size: 2.5rem; /* Large font size */
+    text-align: center; /* Center the text */
+}
+
+/* Styling for the container holding multiple columns */
+.col {
+    width: 1000px; /* Fixed width for the column container */
+    height: 100px; /* Fixed height for the column container */
+    display: flex; /* Enable Flexbox for child alignment */
+    margin: 0 auto; /* Center the container horizontally */
+    justify-content: center; /* Center child items horizontally */
+    color: white; /* White text color */
+}
+
+/* Styling for individual divs inside the col container */
+.col div {
+    margin-top: 20px; /* Add space above each div */
+    width: 250px; /* Fixed width for each div */
+    text-align: center; /* Center align the text inside each div */
+}
+
+/* Styling for input fields */
+input {
+    width: 50%; /* Set input width to half the parent's width */
+    background-color: rgba(255, 255, 255, 0.9); /* Almost opaque white background */
+    height: 50px; /* Fixed height for the input field */
+    border-color: transparent; /* Remove the border color */
+    border-radius: 10px; /* Add rounded corners */
+    text-align: center; /* Center the text inside the input field */
+    font-size: 20px; /* Set font size for better readability */
+}
